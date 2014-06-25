@@ -4,4 +4,4 @@ These are some examples and helpful things for using the Vimeo Player in your pr
 
 Included are both Flash and JavaScript examples.
 
-# Froogaloop fork maintained and used at Goodvid.io
+## Froogaloop fork maintained and used at Goodvid.io
