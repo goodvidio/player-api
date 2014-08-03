@@ -282,7 +282,11 @@ var Froogaloop = (function(){
         window.attachEvent('onmessage', onMessageReceived);
     }
 
-    // Expose froogaloop to the global object
-    return (window.Froogaloop = window.$f = Froogaloop);
+    if (typeof define === 'function' && define.amd) {
+        define("froogaloop", [], function() {
+            // Expose froogaloop to the global object
+            return (window.Froogaloop = window.$f = Froogaloop);
+        });
+    }
 
 })();
